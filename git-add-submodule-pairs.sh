@@ -9,7 +9,7 @@ function error_exit
 }
 
 # check if we are on the root of git repo
-if [ -d .git ]; then 
+if [ ! -d .git ]; then 
 	error_exit "Not a git repo";
 fi;
 
