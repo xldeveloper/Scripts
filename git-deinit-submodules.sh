@@ -14,6 +14,10 @@ if [ -d ../.git ]; then
 fi;
 # go parent dir
 cd ..
+
+# list all submodules
+# grep path .gitmodules | sed 's/.*= //'
+
 # if 'Scripts' directory exist remove the sub-module
 if [ -d Scripts ]; then 
 	git submodule deinit Scripts;
